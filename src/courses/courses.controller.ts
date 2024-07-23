@@ -43,8 +43,6 @@ constructor(private readonly courseService:CoursesService){}
         return this.courseService.update(id,updateCourseDTO);
     }
 
-    
-
     @HttpCode(200)
     @Delete(':id')
     remove(@Param('id') id:number){
